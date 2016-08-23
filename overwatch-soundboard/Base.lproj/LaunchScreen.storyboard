@@ -1,8 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8150" systemVersion="15A204g" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" initialViewController="01J-lp-oVM">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" initialViewController="01J-lp-oVM">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8122"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="bnt_oblique.ttf">
+            <string>BigNoodleTitling-Oblique</string>
+        </mutableArray>
+    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="EHf-IW-A2E">
@@ -15,13 +21,96 @@
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <animations/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dvv-Pe-tyf">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Title" translatesAutoresizingMaskIntoConstraints="NO" id="uXP-c9-86Y">
+                                        <rect key="frame" x="0.0" y="255" width="600" height="90"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="200" id="6Re-5T-BSV"/>
+                                            <constraint firstAttribute="height" constant="90" id="Opd-Q5-Irh"/>
+                                        </constraints>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="6Re-5T-BSV"/>
+                                            </mask>
+                                        </variation>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HERO ULTIMATES" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.29999999999999999" translatesAutoresizingMaskIntoConstraints="NO" id="76w-xN-KQJ">
+                                        <rect key="frame" x="0.0" y="353" width="600" height="60"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="ahV-qq-ss6"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="BigNoodleTitling-Oblique" family="BigNoodleTitling" pointSize="86"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo" translatesAutoresizingMaskIntoConstraints="NO" id="7kk-9s-6ky">
+                                        <rect key="frame" x="225" y="97" width="150" height="150"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="150" id="CbM-zJ-ZE0"/>
+                                            <constraint firstAttribute="height" constant="150" id="GLH-4F-bcg"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="76w-xN-KQJ" secondAttribute="trailing" id="0bl-4Y-TOv"/>
+                                    <constraint firstItem="7kk-9s-6ky" firstAttribute="centerX" secondItem="Dvv-Pe-tyf" secondAttribute="centerX" id="36X-hf-3Et"/>
+                                    <constraint firstItem="uXP-c9-86Y" firstAttribute="leading" secondItem="Dvv-Pe-tyf" secondAttribute="leading" id="3vr-2s-LcL"/>
+                                    <constraint firstAttribute="trailing" secondItem="uXP-c9-86Y" secondAttribute="trailing" id="4yr-fu-C4H"/>
+                                    <constraint firstItem="76w-xN-KQJ" firstAttribute="leading" secondItem="Dvv-Pe-tyf" secondAttribute="leading" id="DLJ-5B-nGX"/>
+                                    <constraint firstAttribute="trailing" secondItem="uXP-c9-86Y" secondAttribute="trailing" id="Klv-R4-gSW"/>
+                                    <constraint firstItem="uXP-c9-86Y" firstAttribute="centerX" secondItem="Dvv-Pe-tyf" secondAttribute="centerX" id="QUa-1V-tzW"/>
+                                    <constraint firstItem="uXP-c9-86Y" firstAttribute="top" secondItem="7kk-9s-6ky" secondAttribute="bottom" constant="8" id="eLe-0J-ohY"/>
+                                    <constraint firstItem="76w-xN-KQJ" firstAttribute="leading" secondItem="Dvv-Pe-tyf" secondAttribute="leading" id="fCJ-Qr-sqK"/>
+                                    <constraint firstItem="76w-xN-KQJ" firstAttribute="top" secondItem="uXP-c9-86Y" secondAttribute="bottom" constant="8" id="gZP-kb-hFS"/>
+                                    <constraint firstAttribute="trailing" secondItem="76w-xN-KQJ" secondAttribute="trailing" id="hSw-Fn-Dgp"/>
+                                    <constraint firstItem="uXP-c9-86Y" firstAttribute="centerY" secondItem="Dvv-Pe-tyf" secondAttribute="centerY" id="iii-vM-8ak"/>
+                                    <constraint firstItem="uXP-c9-86Y" firstAttribute="leading" secondItem="Dvv-Pe-tyf" secondAttribute="leading" id="jwA-if-H5g"/>
+                                    <constraint firstItem="76w-xN-KQJ" firstAttribute="top" secondItem="uXP-c9-86Y" secondAttribute="bottom" constant="8" id="yyz-qK-Glm"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="Klv-R4-gSW"/>
+                                        <exclude reference="QUa-1V-tzW"/>
+                                        <exclude reference="jwA-if-H5g"/>
+                                        <exclude reference="0bl-4Y-TOv"/>
+                                        <exclude reference="fCJ-Qr-sqK"/>
+                                        <exclude reference="gZP-kb-hFS"/>
+                                    </mask>
+                                </variation>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Dvv-Pe-tyf" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="A0N-TY-KHE"/>
+                            <constraint firstItem="Dvv-Pe-tyf" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="MNY-ur-gsN"/>
+                            <constraint firstAttribute="trailing" secondItem="Dvv-Pe-tyf" secondAttribute="trailing" id="VZa-rc-rIa"/>
+                            <constraint firstItem="Dvv-Pe-tyf" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="Yo3-VT-IA9"/>
+                            <constraint firstAttribute="trailing" secondItem="Dvv-Pe-tyf" secondAttribute="trailing" id="d7j-6m-bvu"/>
+                            <constraint firstItem="Dvv-Pe-tyf" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="ki8-Xw-fNB"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="Dvv-Pe-tyf" secondAttribute="bottom" id="llM-ch-IWz"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="Dvv-Pe-tyf" secondAttribute="bottom" id="r4w-AT-OBl"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="MNY-ur-gsN"/>
+                                <exclude reference="VZa-rc-rIa"/>
+                                <exclude reference="Yo3-VT-IA9"/>
+                                <exclude reference="r4w-AT-OBl"/>
+                            </mask>
+                        </variation>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="53" y="375"/>
+            <point key="canvasLocation" x="708" y="560"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Logo" width="300" height="300"/>
+        <image name="Title" width="1000" height="153"/>
+    </resources>
 </document>
